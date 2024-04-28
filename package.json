@@ -1,0 +1,39 @@
+{
+  "name": "@tgthuan/hooks",
+  "version": "0.0.4",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && rollup -c --bundleConfigAsCjs"
+  },
+  "author": "TGThuan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tgthuan2000/hooks"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "react": "^18.3.1",
+    "rollup": "^4.17.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tailwind-merge": "^2.3.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}
